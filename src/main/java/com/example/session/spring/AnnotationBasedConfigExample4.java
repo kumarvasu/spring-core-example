@@ -5,8 +5,9 @@ import com.example.session.core.scan.CSHelloWorldConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
- * Scans the package provided and creates the beans defined using @Component annotations and
- * injects the dependencies based on @Autowired annotation.
+ * Reads the provided config file and creates the defined beans.
+ * Also scans all the package & sub packages (relative to config file location) and
+ * creates the beans defined using @Component annotations
  */
 public class AnnotationBasedConfigExample4 {
 
